@@ -6,6 +6,10 @@ public class character2DController : MonoBehaviour
     public float movementSpeed = 1;
     public float jumpForce = 1;
     private Rigidbody2D Rigidbody;
+
+    public projectorBullet ProjectilePrefeb;
+    public Transform launchOffset;
+
     private void Start()
     {
         Rigidbody = GetComponent<Rigidbody2D>();    
@@ -23,6 +27,11 @@ public class character2DController : MonoBehaviour
         if (Input.GetButtonDown("Jump") && Mathf.Abs(Rigidbody.linearVelocity.y) < 0.001f)
         {
             Rigidbody.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+        }
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Instantiate(ProjectilePrefeb, launchOffset.position, transform.rotation);
         }
     }
 }
