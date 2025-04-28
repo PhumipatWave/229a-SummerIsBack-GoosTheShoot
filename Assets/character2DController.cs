@@ -8,6 +8,7 @@ public class character2DController : MonoBehaviour
     private Rigidbody2D Rigidbody;
 
     public projectorBullet ProjectilePrefeb;
+    public projectile LaunchableProjectilePrefeb;
     public Transform launchOffset;
 
     private void Start()
@@ -32,6 +33,10 @@ public class character2DController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Instantiate(ProjectilePrefeb, launchOffset.position, transform.rotation);
+        }
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Instantiate(LaunchableProjectilePrefeb, launchOffset.position, transform.rotation);
         }
     }
 }
