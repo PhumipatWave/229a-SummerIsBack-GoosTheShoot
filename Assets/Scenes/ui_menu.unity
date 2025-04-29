@@ -859,8 +859,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -385, y: 187}
-  m_SizeDelta: {x: 500, y: 150}
+  m_AnchoredPosition: {x: -423.41864, y: 187}
+  m_SizeDelta: {x: 656.5204, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &198981217
 MonoBehaviour:
@@ -882,7 +882,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 538a9a1510484df45bf440a01a575a27, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3309,10 +3309,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "1660701663 Suwaphat Chokchakphet\n\nN0.13 Sec.229G\n\n\n1660702240 Phumipat
+    Sawasdee \n\nNo.17 Sec.229G\n\n\n1660704329 Possawat Sanwattana-arporn \n\nNo.29
+    229G"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f4362030e46dcb4e964359f87241768, type: 2}
+  m_sharedMaterial: {fileID: 2000637900308641311, guid: 9f4362030e46dcb4e964359f87241768, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3336,8 +3338,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3903,7 +3905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1209723941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5582,7 +5584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 140, y: 0}
+  m_AnchoredPosition: {x: 140, y: 37}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891735164
@@ -5605,10 +5607,37 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 'Dungeon Tale - Fantasy RPG Sprites FX Tileset
+
+
+    BY NullTale IN AssetStore
+    Unity
+
+
+
+    Pixel Art Character Package
+
+
+    BY GDD-Quinnipiac IN AssetStore
+    Unity
+
+
+
+    Pixel Art Flower Pack
+
+
+    BY karsiori IN AssetStore Unity
+
+
+
+    2D
+    Simple UI Pack
+
+
+    BY OArielG IN AssetStore Unity'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f4362030e46dcb4e964359f87241768, type: 2}
+  m_sharedMaterial: {fileID: 2000637900308641311, guid: 9f4362030e46dcb4e964359f87241768, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5632,8 +5661,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
