@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyHeath : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public float hitPoints;
     public float maxHitPoints = 5;

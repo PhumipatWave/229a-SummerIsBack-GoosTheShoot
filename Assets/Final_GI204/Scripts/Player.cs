@@ -1,14 +1,14 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class character2DController : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public float movementSpeed = 1;
     public float jumpForce = 1;
     private Rigidbody2D Rigidbody;
 
-    public projectorBullet ProjectilePrefeb;
-    public projectile LaunchableProjectilePrefeb;
+    public ProjectileBullet ProjectilePrefeb;
+    public BombProjectile LaunchableProjectilePrefeb;
     public Transform launchOffset;
 
     private void Start()

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 349130350022261041}
   - component: {fileID: 4833913578536153843}
   m_Layer: 0
-  m_Name: Deton Red Gun_0
+  m_Name: Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

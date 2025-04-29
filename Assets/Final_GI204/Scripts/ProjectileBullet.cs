@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class projectorBullet : MonoBehaviour
+public class ProjectileBullet : MonoBehaviour
 {
     public float speed = 4.5f;
 
@@ -18,7 +18,7 @@ public class projectorBullet : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            collision.GetComponent<EnemyHeath>().TakeHit(1f);
+            collision.GetComponent<Enemy>().TakeHit(1f);
         }
     }
 

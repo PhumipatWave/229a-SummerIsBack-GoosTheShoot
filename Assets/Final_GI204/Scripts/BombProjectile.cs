@@ -1,6 +1,6 @@
  using UnityEngine;
 
-public class projectile : MonoBehaviour
+public class BombProjectile : MonoBehaviour
 {
     public float speed = 4;
     public Vector3 launchOffset;
@@ -26,7 +26,7 @@ public class projectile : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       var enemy = collision.collider.GetComponent<EnemyHeath>();
+       var enemy = collision.collider.GetComponent<Enemy>();
         if (enemy)
         {
             enemy.TakeHit(1);
