@@ -4,6 +4,11 @@ public class Projectile : MonoBehaviour
 {
     public float speed = 4.5f;
 
+    private void Start()
+    {
+        Destroy(gameObject, 5f);
+    }
+
     private void Update()
     {
         transform.position += -transform.right * speed * Time.deltaTime;

@@ -31,6 +31,7 @@ public abstract class Character : MonoBehaviour
         if (Physics2D.Raycast(groundCheck.transform.position, -transform.up, 1.5f, groundLayer))
         {
             isGround = true;
+            Debug.Log("Is Ground");
 
             if (this.CompareTag("Player"))
             {
@@ -40,6 +41,8 @@ public abstract class Character : MonoBehaviour
         else
         {
             isGround = false;
+            Debug.Log("Is Air");
+
             if (this.CompareTag("Player"))
             {
                 anim.SetBool("isGround", false);

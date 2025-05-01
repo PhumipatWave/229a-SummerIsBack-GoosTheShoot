@@ -20,9 +20,12 @@ public class Enemy : Character
 
     private void Update()
     {
-        CheckGround();
-        Movement();
-        Attack();
+        if (!isDeath)
+        {
+            CheckGround();
+            Movement();
+            Attack();
+        }
     }
 
     // Movement logic

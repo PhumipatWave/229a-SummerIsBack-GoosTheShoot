@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ public class Player : Character
         maxHealth = 3;
         health = maxHealth;
         jumpForce = 30f;
+        target.SetActive(false);
     }
 
     private void Update()
@@ -42,11 +44,19 @@ public class Player : Character
             if (hit.collider != null)
             {
                 target.transform.position = new Vector2(hit.point.x, hit.point.y);
+                target.SetActive(true);
                 Vector2 projectileVelocity = CalculateProjectile(firePoint.position, hit.point, 1);
                 Rigidbody2D firedBomb = Instantiate(bombPrefab, firePoint.position, Quaternion.identity);
                 firedBomb.linearVelocity = projectileVelocity;
+                StartCoroutine(TargetRoutine());
             }
         }
+    }
+
+    IEnumerator TargetRoutine()
+    {
+        yield return new WaitForSeconds(1.25f);
+        target.SetActive(true);
     }
 
     // Calculate projectile velocity
