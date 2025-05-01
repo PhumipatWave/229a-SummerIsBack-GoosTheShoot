@@ -2887,7 +2887,7 @@ RectTransform:
   - {fileID: 1850939278}
   - {fileID: 1431322836}
   - {fileID: 1404711407}
-  m_Father: {fileID: 1776831124}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4779,9 +4779,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "1660701663 Suwaphat Chokchakphet\n\nN0.13 Sec.229G\n\n\n1660702240 Phumipat
-    Sawasdee \n\nNo.17 Sec.229G\n\n\n1660704329 Possawat Sanwattana-arporn \n\nNo.29
-    229G"
+  m_text: "1660701663 Suwaphat Chokchakphet\n\nN0.13 Sec.229G  \n\nUI\n\n1660702240
+    Phumipat Sawasdee \n\nNo.17 Sec.229G \n\nPhysic code, Game Manager, Collect code\n\n\n1660704329
+    Possawat Sanwattana-arporn \n\nNo.29 229G\n\nSound, Character code, Projectile"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9f4362030e46dcb4e964359f87241768, type: 2}
   m_sharedMaterial: {fileID: 2000637900308641311, guid: 9f4362030e46dcb4e964359f87241768, type: 2}
@@ -7764,7 +7764,6 @@ RectTransform:
   m_Children:
   - {fileID: 449234099}
   - {fileID: 1758880676}
-  - {fileID: 626060869}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9856,6 +9855,7 @@ SceneRoots:
   - {fileID: 354236208}
   - {fileID: 2068817088}
   - {fileID: 1545013967}
+  - {fileID: 626060869}
   - {fileID: 1176449644}
   - {fileID: 1416229338}
   - {fileID: 2027475280}
