@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Player : Character
 {
@@ -9,12 +10,14 @@ public class Player : Character
     public Transform firePoint;
     public GameObject target;
 
+    public AudioClip jumpSound;
+
     private void Start()
     {
         Initialize();
         maxHealth = 3;
         health = maxHealth;
-        jumpForce = 5f;
+        jumpForce = 8f;
         target.SetActive(false);
     }
 
@@ -23,8 +26,6 @@ public class Player : Character
         if (!isDeath)
         {
             CheckGround();
-            Movement();
-            Jump();
             // Fire bullet
             Attack();
             ThrowBomb();
@@ -35,6 +36,15 @@ public class Player : Character
             Death();
         }
    }
+
+    private void FixedUpdate()
+    {
+        if (!isDeath)
+        {
+            Movement();
+            Jump();
+        }
+    }
 
     // Throw bomb logic
     private void ThrowBomb()
@@ -83,7 +93,10 @@ public class Player : Character
     public void Jump()
     {
         if (Input.GetButtonDown("Jump") && isGround)
+        {
             rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            audioSource.PlayOneShot(jumpSound);
+        }
     }
 
     // Movement logic
@@ -91,7 +104,7 @@ public class Player : Character
     {
         // F = MA :Start
         float mass = rb.mass;
-        float acc = 275f;
+        float acc = 325f;
         speed = mass * acc;
         float movement = Input.GetAxis("Horizontal");
 

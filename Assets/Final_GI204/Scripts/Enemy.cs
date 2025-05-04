@@ -23,8 +23,15 @@ public class Enemy : Character
         if (!isDeath)
         {
             CheckGround();
-            Movement();
             Attack();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (!isDeath)
+        {
+            Movement();
         }
     }
 

@@ -4,8 +4,12 @@ public abstract class Character : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator anim;
+    public AudioSource audioSource;
     public GameObject groundCheck;
     public LayerMask groundLayer;
+
+    public AudioClip takeDamagedSound;
+    public AudioClip deathSound;
 
     public int health;
     public int maxHealth;
@@ -19,6 +23,7 @@ public abstract class Character : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         isDeath = false;
     }
 
@@ -54,6 +59,7 @@ public abstract class Character : MonoBehaviour
     // On take damage
     public void TakeDamage(int damage)
     {
+        audioSource.PlayOneShot(takeDamagedSound);
         health -= damage;
         anim.SetTrigger("isDamaged");
 
@@ -63,6 +69,7 @@ public abstract class Character : MonoBehaviour
     // On Death
     public void Death()
     {
+        audioSource.PlayOneShot(deathSound);
         health = 0;
         anim.SetBool("isDeath", true);
         isDeath = true;
