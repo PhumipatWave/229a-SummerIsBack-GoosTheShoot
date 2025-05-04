@@ -36890,7 +36890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &782561930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56244,7 +56244,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "1660701663 Suwaphat Chokchakphet\n\nN0.13 Sec.229G  \n\nUI\n\n1660702240
     Phumipat Sawasdee \n\nNo.17 Sec.229G \n\nPhysic code, Game Manager, Collect code\n\n\n1660704329
-    Possawat Sanwattana-arporn \n\nNo.29 229G\n\nSound, Character code, Projectile"
+    Possawat Sanwattana-arporn \n\nNo.29 229G\n\nCharacter code, Projectile"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9f4362030e46dcb4e964359f87241768, type: 2}
   m_sharedMaterial: {fileID: 2000637900308641311, guid: 9f4362030e46dcb4e964359f87241768, type: 2}
