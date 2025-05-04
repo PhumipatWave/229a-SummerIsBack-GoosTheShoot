@@ -1,10 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pausemenu_script : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject creditOpening;
-    public GameObject mainMenu;
     private bool isPause = false;
 
     void Update()
@@ -29,10 +29,12 @@ public class pausemenu_script : MonoBehaviour
         isPause = false;
     }
 
-    public void Home() 
+    public void Home()
     {
+        Time.timeScale = 1f;
+        isPause = false;
         pauseMenu.SetActive(false);
-        mainMenu.SetActive(true);
+        SceneManager.LoadScene("MenuUI");
     }
 
     public void CreditOpening() 

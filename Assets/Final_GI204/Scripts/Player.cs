@@ -14,7 +14,7 @@ public class Player : Character
         Initialize();
         maxHealth = 3;
         health = maxHealth;
-        jumpForce = 30f;
+        jumpForce = 25f;
         target.SetActive(false);
     }
 
@@ -28,6 +28,11 @@ public class Player : Character
             // Fire bullet
             Attack();
             ThrowBomb();
+        }
+
+        if (transform.position.y <= -30)
+        {
+            Death();
         }
    }
 
@@ -86,7 +91,7 @@ public class Player : Character
     {
         // F = MA :Start
         float mass = rb.mass;
-        float acc = 250f;
+        float acc = 275f;
         speed = mass * acc;
         float movement = Input.GetAxis("Horizontal");
 

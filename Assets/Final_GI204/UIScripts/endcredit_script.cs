@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class endcredit_script : MonoBehaviour
 {
@@ -15,6 +16,12 @@ public class endcredit_script : MonoBehaviour
     public void LoseNext()
     {
         loseMenu.SetActive(false);
+        Destroy(loseMenu.gameObject);
         creditMenu.SetActive(true);
+    }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene("MenuUI");
     }
 }

@@ -63,6 +63,7 @@ public abstract class Character : MonoBehaviour
     // On Death
     public void Death()
     {
+        health = 0;
         anim.SetBool("isDeath", true);
         isDeath = true;
         Destroy(this.gameObject, 1.25f);

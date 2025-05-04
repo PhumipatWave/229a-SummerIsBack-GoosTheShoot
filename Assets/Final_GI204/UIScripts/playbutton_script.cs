@@ -7,6 +7,7 @@ public class playbutton_script : MonoBehaviour
 
     public void GameplayViewport()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(sceneName);
     }
 }

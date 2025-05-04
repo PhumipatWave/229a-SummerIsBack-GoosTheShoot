@@ -15,7 +15,7 @@ public class Enemy : Character
         maxHealth = 1;
         health = maxHealth;
         player = FindAnyObjectByType<Player>();
-        attackCooldown = 3f;
+        attackCooldown = 5f;
     }
 
     private void Update()
@@ -35,7 +35,7 @@ public class Enemy : Character
         {
             // F = MA :Start
             float mass = rb.mass;
-            float acc = 225f;
+            float acc = 200f;
             speed = mass * acc;
             distanceToPlayer = player.transform.position.x - transform.position.x;
             float moveDir = Mathf.Sign(distanceToPlayer);
@@ -73,6 +73,7 @@ public class Enemy : Character
 
         isAttackCooldown = true;
         yield return new WaitForSeconds(attackCooldown);
+        Debug.Log("Atk finish cooldown");
         isAttackCooldown = false;
     }
 }

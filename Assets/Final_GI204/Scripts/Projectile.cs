@@ -6,12 +6,15 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 3f);
     }
 
     private void Update()
     {
-        transform.position += -transform.right * speed * Time.deltaTime;
+        if (this.CompareTag("Bullet"))
+        {
+            transform.position += -transform.right * speed * Time.deltaTime;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
