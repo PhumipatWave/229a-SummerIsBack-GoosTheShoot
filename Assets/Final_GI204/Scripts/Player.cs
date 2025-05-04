@@ -14,7 +14,7 @@ public class Player : Character
         Initialize();
         maxHealth = 3;
         health = maxHealth;
-        jumpForce = 25f;
+        jumpForce = 5f;
         target.SetActive(false);
     }
 

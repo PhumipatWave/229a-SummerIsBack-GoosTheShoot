@@ -18,7 +18,7 @@ public class heart_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.health > 0)
+        if (player.health > 0 && player.health < 3)
         {
             hearts[player.health].sprite = deathHearts;
         }
